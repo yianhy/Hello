@@ -9,5 +9,7 @@ public class PersonTest {
         Person p2=new Man();
         p2.sleep();
         p2.eat();
+
+
     }
 }
