@@ -10,6 +10,7 @@ package com.atguigu06.polymorphism;
  */
 public class PersonTest1 {
     public static void main(String[] args) {
+
         Person p1 = new Man();
         //不能直接调用子类特有的结构
 //        p1.earnMoney();
