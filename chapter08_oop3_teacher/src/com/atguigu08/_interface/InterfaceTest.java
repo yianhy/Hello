@@ -37,7 +37,7 @@ interface Flyable{  //接口
     void fly();
 }
 
-interface Attackable{ //接口
+interface Aggressive{ //接口
 
     public abstract void  attack();
 }
@@ -46,7 +46,7 @@ abstract class Plane implements Flyable{
 
 }
 
-class Bullet implements Flyable,Attackable{
+class Bullet implements Flyable,Aggressive{
 
     @Override
     public void fly() {
