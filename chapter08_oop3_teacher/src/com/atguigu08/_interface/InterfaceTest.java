@@ -83,5 +83,6 @@ class DD implements CC{
     public void method2() {
 
     }
+
 }
 

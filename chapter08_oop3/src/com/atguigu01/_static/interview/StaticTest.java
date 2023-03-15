@@ -9,8 +9,8 @@ package com.atguigu01._static.interview;
 public class StaticTest {
     public static void main(String[] args) {
         Order order = null;
-        order.hello();
-        System.out.println(order.count);
+        Order.hello();
+        System.out.println(Order.count);
     }
 }
 

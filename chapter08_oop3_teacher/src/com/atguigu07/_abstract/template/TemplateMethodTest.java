@@ -5,7 +5,6 @@ public class TemplateMethodTest {
 	public static void main(String[] args) {
 		BankTemplateMethod btm = new DrawMoney();
 		btm.process();
-
 		System.out.println();
 		BankTemplateMethod btm2 = new ManageMoney();
 		btm2.process();

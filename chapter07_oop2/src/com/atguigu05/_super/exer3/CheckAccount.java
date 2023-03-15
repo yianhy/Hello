@@ -27,4 +27,13 @@ public class CheckAccount extends Account{
     public void setOverdraft(double overdraft) {
         this.overdraft = overdraft;
     }
+
+    @Override
+    public void withdraw(double amount) {
+        if (amount>=0&&amount<=super.getBalance()+overdraft){
+            super.setBalance(super.getBalance()-amount);
+        }else {
+            System.out.println("你输入的金额有误");
+        }
+    }
 }

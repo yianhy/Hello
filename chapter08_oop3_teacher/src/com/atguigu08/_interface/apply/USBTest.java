@@ -25,6 +25,7 @@ public class USBTest {
         //3.创建接口匿名实现类的对象
         USB usb1 = new USB(){
             public void start(){
+
                 System.out.println("U盘开始工作");
             }
             public void stop(){
@@ -44,6 +45,18 @@ public class USBTest {
             }
         });
 
+        computer.transferData(new USB() {
+            @Override
+            public void start() {
+                System.out.println("start");
+            }
+
+            @Override
+            public void stop() {
+                System.out.println("stop");
+            }
+        });
+
     }
 
 }
@@ -57,6 +70,7 @@ class Computer{
         System.out.println("数据传输的细节操作....");
 
         usb.stop();
+
     }
 
 }
@@ -87,7 +101,7 @@ class Printer implements USB{
     }
 }
 
-interface USB{
+/*interface USB{
     //声明常量
     //USB的长、宽、高、...
 
@@ -95,4 +109,13 @@ interface USB{
     //方法
     public abstract void start();
     void stop();
+}
+
+ */
+interface USB {
+    int length = 0;
+    int high=0;
+    void start();
+    void stop();
+
 }
