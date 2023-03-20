@@ -28,6 +28,13 @@ public class ThrowsTest {
 
 
     public static void method3(){
+        try {
+            method2();
+        }catch (FileNotFoundException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
         try{
 
             method2();

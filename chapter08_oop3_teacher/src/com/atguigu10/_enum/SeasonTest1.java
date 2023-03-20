@@ -8,6 +8,8 @@ package com.atguigu10._enum;
  * @Create 14:24
  * @Version 1.0
  */
+
+
 public class SeasonTest1 {
     public static void main(String[] args) {
 //        System.out.println(Season1.SPRING.getClass());

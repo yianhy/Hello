@@ -1,5 +1,6 @@
 package com.atguigu02.iterator.interview;
 
+
 import org.junit.Test;
 
 /**
@@ -9,8 +10,10 @@ import org.junit.Test;
  * @create 16:53
  */
 public class InterviewTest {
+
     @Test
     public void testFor() {
+
         String[] arr1 = new String[]{"AA", "CC", "DD"};
 
         //赋值操作1

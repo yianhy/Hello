@@ -6,8 +6,10 @@ package com.atguigu02.trycatchfinally.interview;
  */
 public class FinallyTest1 {
     public static void main(String[] args) {
+
         int result = test("12");
         System.out.println(result);
+
     }
 
     public static int test(String str){
@@ -17,7 +19,7 @@ public class FinallyTest1 {
         }catch(NumberFormatException e){
             return -1;
         }finally{
-            System.out.println("test结束");
+            System.out.println("test结束了");
         }
     }
 }
