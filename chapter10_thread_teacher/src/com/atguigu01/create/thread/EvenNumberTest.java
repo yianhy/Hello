@@ -9,20 +9,20 @@ package com.atguigu01.create.thread;
  * @Version 1.0
  */
 
-
-//① 创建一个继承于Thread类的子类
 class PrintNumber extends Thread{
+    int num = 100;
+
+    //① 创建一个继承于Thread类的子类
 //    private double money = 1000;
     //② 重写Thread类的run() --->将此线程要执行的操作，声明在此方法体中
+
     @Override
     public void run() {
-
-        for (int i = 1; i <= 100; i++) {
-            if(i % 2 == 0){
-                System.out.println(Thread.currentThread().getName() +":" + i);
+        for (int i = 0; i <= num; i++) {
+            if (i % 2 == 0) {
+                System.out.println("="+i);
             }
         }
-
     }
 }
 public class EvenNumberTest {
@@ -34,6 +34,15 @@ public class EvenNumberTest {
 
         //④ 通过对象调用start()
         t1.start();
+
+        new Thread(){
+            @Override
+            public void run() {
+                System.out.println("匿名类的匿名子对象");
+            }
+        }.start();
+
+
 
         /*
         * 问题1：能否使用t1.run()替换t1.start()的调用，实现分线程的创建和调用? 不能！

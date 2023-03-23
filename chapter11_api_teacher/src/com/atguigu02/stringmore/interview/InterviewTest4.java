@@ -10,13 +10,18 @@ public class InterviewTest4 {
     public static void main(String[] args) {
         String str = null;
         StringBuffer sb = new StringBuffer();
-        sb.append(str);
+        sb.append(str).append(1);
+        StringBuilder s1=new StringBuilder("str");
+        System.out.println(s1);
+
+
 
         System.out.println(sb.length());//4
 
         System.out.println(sb);//"null"
 
-        StringBuffer sb1 = new StringBuffer(str);
+        StringBuffer sb1 = new StringBuffer();
+        sb1.append(3);
         System.out.println(sb1);//空指针异常
     }
 }
