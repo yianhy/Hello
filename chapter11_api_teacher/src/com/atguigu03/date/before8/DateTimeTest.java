@@ -119,4 +119,34 @@ public class DateTimeTest {
         calendar.setTime(date1);
         System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
     }
+    @Test
+    public void text5(){
+        Date d1=new Date();
+        System.out.println(d1.toString());
+        System.out.println(d1.getTime());
+        java.sql.Date d2=new java.sql.Date(d1.getTime());
+        System.out.println(d2.toString());
+        System.out.println("d2.toString() = " + d2.toString());
+    }
+    @Test
+    /**
+     * Calendar:日历类
+     */
+    public void text6(){
+        Calendar c1=Calendar.getInstance();
+        System.out.println(c1.get(Calendar.DAY_OF_YEAR));
+        System.out.println(c1.get(Calendar.DAY_OF_MONTH));
+        c1.set(Calendar.DAY_OF_MONTH,4);
+        Date d1=new Date();
+        java.sql.Date d2=new java.sql.Date(d1.getTime());
+    }
+    @Test
+    public void text7() throws ParseException {
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        String pattern="2022-12-12";
+        Date d1=sdf.parse(pattern);
+        java.sql.Date d2=new java.sql.Date(d1.getTime());
+        System.out.println(d2);
+
+    }
 }

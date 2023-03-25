@@ -21,7 +21,7 @@ public class EmployeeTest {
 
         TreeSet<Employee> set = new TreeSet<>();
 
-        Employee e1 = new Employee("HanMeimei",18,new MyDate(1998,12,21));
+        Employee e1 = new Employee("HanMeiMei",18,new MyDate(1998,12,21));
         Employee e2 = new Employee("LiLei",20,new MyDate(1996,11,21));
         Employee e3 = new Employee("LiHua",21,new MyDate(2000,9,12));
         Employee e4 = new Employee("ZhangLei",19,new MyDate(1997,5,31));

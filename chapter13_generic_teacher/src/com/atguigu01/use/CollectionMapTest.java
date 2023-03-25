@@ -38,6 +38,7 @@ public class CollectionMapTest {
     //在集合中使用泛型的例子
     @Test
     public void test2(){
+        
         List<Integer> list = new ArrayList<Integer>();
 
         list.add(78);

@@ -17,13 +17,16 @@ import java.util.List;
  * @Version 1.0
  */
 public class CollectionTest {
-    /*
+    /**
     *   （1）add(Object obj)：添加元素对象到当前集合中
         （2）addAll(Collection other)：添加other集合中的所有元素对象到当前集合中，即this = this ∪ other
-    * */
+    */
     @Test
     public void test(){
         Collection coll = new ArrayList();
+        Collection collection =new ArrayList();
+        collection.add("hello");
+        collection.add(111);
 
         //add()
         coll.add("AA");
@@ -43,23 +46,25 @@ public class CollectionTest {
         System.out.println(coll.size());//5
 
         coll.addAll(coll1);
-//        coll.add(coll1);
+        //coll.add(coll1)是将aoll1当成一个整体元素添加进去
 
         System.out.println(coll);
 
-        //size():
-        System.out.println(coll.size());//7
-
+        //size():获取个数(7个)
+        System.out.println(coll.size());
+        System.out.println(coll.isEmpty());
+        System.out.println(coll.contains("AA"));//实际比较的是内容
+        coll.clear();
 
     }
 
-    /*
+    /**
     *  （3）int size()：获取当前集合中实际存储的元素个数
         （4）boolean isEmpty()：判断当前集合是否为空集合
         （5）boolean contains(Object obj)：判断当前集合中是否存在一个与obj对象equals返回true的元素
         （6）boolean containsAll(Collection coll)：判断coll集合中的元素是否在当前集合中都存在。即coll集合是否是当前集合的“子集”
         （7）boolean equals(Object obj)：判断当前集合与obj是否相等
-    * */
+     */
 
     @Test
     public void test2(){
