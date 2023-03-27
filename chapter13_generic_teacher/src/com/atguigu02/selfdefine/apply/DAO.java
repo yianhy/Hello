@@ -3,7 +3,7 @@ package com.atguigu02.selfdefine.apply;
 import java.util.List;
 
 /**
- * ClassName: DAO
+ * ClassName:
  * Description:
  *    DAO:data(base) access object。内部封装了操作数据库相关表的增删改查操作。(CRUD)
  *

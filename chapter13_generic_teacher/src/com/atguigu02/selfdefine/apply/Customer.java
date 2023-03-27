@@ -16,6 +16,7 @@ import java.sql.Date;
  * @Version 1.0
  */
 public class Customer {
+
     int id;
     String name;
     String email;

@@ -19,7 +19,7 @@ public class Exer02 {
 
         //（2）添加5个[0,100)以内的随机整数到集合中
         for (int i = 0; i < 5; i++) {
-            int random = (int)(Math.random() * (99 - 0 + 1));
+            int random = (int)(Math.random() * (99 + 1));
             list.add(random);
 
         }
@@ -30,6 +30,7 @@ public class Exer02 {
         }
 
         //（4）使用集合的removeIf方法删除偶数，为Predicate接口指定泛型<Ineteger>
+
         list.removeIf(new Predicate<Integer>(){
             @Override
             public boolean test(Integer value) {
