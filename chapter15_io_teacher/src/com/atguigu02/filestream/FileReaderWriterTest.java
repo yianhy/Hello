@@ -13,11 +13,11 @@ import java.io.*;
  * @Version 1.0
  */
 public class FileReaderWriterTest {
-    /*
+    /**
      * 需求：读取hello.txt中的内容，显示在控制台上。
      *
      * 异常使用throws的方式处理，不太合适。见 test2()
-     * */
+      */
     @Test
     public void test1() throws IOException {
         //1.创建File类的对象，对应着hello.txt文件

@@ -14,12 +14,24 @@ import java.io.FilenameFilter;
  * @Version 1.0
  */
 public class Exer02 {
-    /*
+    /**
     * 判断指定目录下是否有后缀名为.jpg的文件，如果有，就输出该文件名称
     * */
     @Test
     public void test1(){
         File dir = new File("F:\\10-图片");
+        dir.list(new FilenameFilter() {
+            @Override
+            public boolean accept(File dir, String name) {
+                return name.endsWith(".jpg");
+            }
+        });
+        String[] list = dir.list();
+        for (String s:list){
+            if (s.endsWith(".jpg")){
+                System.out.println(s);
+            }
+        }
 
         //方式1：
 //        String[] listFiles = dir.list();

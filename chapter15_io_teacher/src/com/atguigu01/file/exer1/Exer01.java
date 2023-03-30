@@ -17,7 +17,7 @@ public class Exer01 {
 
         System.out.println(file1.getAbsolutePath());
         //获取file1的绝对路径，获取此路径的上层文件目录。
-//        System.out.println(file1.getAbsoluteFile().getParent());
+        //System.out.println(file1.getAbsoluteFile().getParent());
 
         File file2 = new File(file1.getAbsoluteFile().getParent(),"abc.txt");
 
