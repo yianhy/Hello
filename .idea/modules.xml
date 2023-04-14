@@ -34,6 +34,7 @@
       <module fileurl="file://$PROJECT_DIR$/chapter17_reflect_teacher/chapter17_reflect_teacher.iml" filepath="$PROJECT_DIR$/chapter17_reflect_teacher/chapter17_reflect_teacher.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter18_features/chapter18_features.iml" filepath="$PROJECT_DIR$/chapter18_features/chapter18_features.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter18_features_teacher/chapter18_features_teacher.iml" filepath="$PROJECT_DIR$/chapter18_features_teacher/chapter18_features_teacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc/jdbc.iml" filepath="$PROJECT_DIR$/jdbc/jdbc.iml" />
     </modules>
   </component>
 </project>
